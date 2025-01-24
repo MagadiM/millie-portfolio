@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <section id="home">
+        <h1 style="color: #260080; text-transform: uppercase;">Millicent Magadi Portfolio</h1>
+        <div class="intro">
+          <div class="intro-page">
+            <p>Hi! I'm a Full Stack Developer working to creating lasting solutions to existing problems and those yet to be discovered.</p>
+          </div>
+          <img src="./profile-img.jpg" alt="Profile Image">
+        </div>
+      </section>
+    
+      <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Millicent Magadi. I am an aspiring FullStack Developer currently working on HTML, CSS, JavaScript, Dart, and Python. I am working on several projects trying to learn all the aspects as I work o being the best version of a developer<br>
+        To understand more about my skills and experience, click on the links below to get more info. </p>
+        <div class="about-icons">
+          <div class="icon-card">
+            <i class="fas fa-code"></i>
+            <p><a href="about.html">Profile</a></p>
+          </div>
+          <div class="icon-card">
+            <i class="fas fa-paint-brush"></i>
+            <p><a href="about.html">Work Experience</a></p>
+          </div>
+          <div class="icon-card">
+            <i class="fas fa-project-diagram"></i>
+            <p><a href="about.html">Skill Set</a></p>
+          </div>
+        </div>
+      </section>
+    
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>TeleMedicine Web Application</h3>
+            <p>A Telemedicine application conecting doctors and patients. It was created using Nodejs Express,  HTML, CSS, and JavaScript. The main prototype is ready for viewing. However, we are looking to incorporate a telecoferencing feature to improve interactions.</p>
+            <button><a href="#">View Project</a></button>
+          </div>
+          <div class="project-card">
+            <h3>Weather Application</h3>
+            <p>A Python-django weather application created to provide users with the current weather of any input City.</p>
+            <button><a href="#">View Project</a></button>
+          </div>
+          <div class="project-card">
+            <h3>Mavuno Gain Agri-Tech App</h3>
+            <p>A Agritech application created using Dart with Flutter to connect farmrs and vendors while providing a marketing platform restricted to these parties. The application incorporates Nodejs and Python to bring together different features ideal for success. </p>
+            <button><a href="#">View Project</a></button>
+          </div>
+        </div>
+      </section>
+    
+      <section id="contact">
+        <h2 style="color: #270080">Contact</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    
+      <footer>
+        <p>&copy; 2025 Millicent Magadi. All Rights Reserved.</p>
+      </footer>
+    
+      <script src="script.js"></script>
+</body>
+</html>
