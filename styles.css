@@ -39,6 +39,24 @@ body {
   header ul li a:hover {
     color: #260080;
   }
+
+  /* Hamburger Menu Styling */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-toggle .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+}
+
   
   section {
     padding: 2rem;
@@ -47,9 +65,12 @@ body {
   
   #home {
     background: #f4f4f4;
-    height: 80vh;
     display: grid;
   }
+
+  /* #home p {
+    font-size: 2.0rem;
+  } */
   
   #home .intro {
     display: flex;
@@ -62,7 +83,7 @@ body {
   
   #home .intro-page {
     flex: 1; 
-    min-width: 400px; 
+    font-size: 1.5rem;
   }
   
   #home img {
@@ -84,6 +105,7 @@ body {
   
   #about {
     background: #b67afa66;
+    font-size: 1.2rem;
   }
   .about-icons {
     display: flex;
@@ -104,13 +126,21 @@ body {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
-  
+
+  .icon-card p a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #270080;
+    font-weight: 700;
+  }
+
   #projects {
     background: #f4f4f4;
   }
   
   .project-grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
   }
@@ -125,6 +155,8 @@ body {
   
   .project-card button {
     background: #270080;
+    padding: 10px;
+    border-radius: 15%;
   }
   
   .project-card button a {
@@ -137,8 +169,6 @@ body {
   
   #contact {
     background: #b67afa66;
-    justify-content: center;
-    align-items: center;
   }
   
   form {
@@ -151,31 +181,61 @@ body {
   form input, form textarea, form button {
     width: 100%;
     padding: 0.5rem;
+    justify-content: center;
+    align-content: center;
   }
   
   form button {
     background: #270080;
-    color: white;
     border: none;
     cursor: pointer;
+  }
+
+  form button a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
   }
   
   footer {
     background: mediumpurple;
+    font-size: 1rem;
     color: black;
     padding: 0.5rem;
     text-align: center;
     text-transform: uppercase;
   }
   
-  @media (max-width: 768px) {
-    #home .intro {
-      flex-direction: column; /* Switches to column layout on smaller screens */
-      text-align: center; /* Centers text for a better layout */
-    }
-  
-    .project-grid {
-      flex-direction: column;
-    }
+@media (max-width: 768px) {
+  #home .intro {
+    flex-direction: column; /* Switches to column layout on smaller screens */
+    text-align: center; /* Centers text for a better layout */
   }
-  
+
+  .about-icons {
+    flex-direction: column;
+  }
+
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: mediumpurple;
+    color: #260080;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}

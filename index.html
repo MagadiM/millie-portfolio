@@ -9,20 +9,29 @@
 <body>
     <header>
         <nav>
-          <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <div class="navbar">
+            <!-- <a href="#home" class="logo">Logo</a> -->
+            <button class="menu-toggle" aria-label="Toggle menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </nav>
+        
       </header>
     
       <section id="home">
         <h1 style="color: #260080; text-transform: uppercase;">Millicent Magadi Portfolio</h1>
         <div class="intro">
           <div class="intro-page">
-            <p>Hi! I'm a Full Stack Developer working to creating lasting solutions to existing problems and those yet to be discovered.</p>
+            <p>Hi! I'm a Full Stack Developer striving to create lasting solutions to existing problems and those yet to be discovered.</p>
           </div>
           <img src="./profile-img.jpg" alt="Profile Image">
         </div>
@@ -30,20 +39,20 @@
     
       <section id="about">
         <h2>About Me</h2>
-        <p>My name is Millicent Magadi. I am an aspiring FullStack Developer currently working on HTML, CSS, JavaScript, Dart, and Python. I am working on several projects trying to learn all the aspects as I work o being the best version of a developer<br>
+        <p>My name is Millicent Magadi. I am an aspiring FullStack Developer currently working on HTML, CSS, JavaScript, Dart, and Python. I am working on several projects trying to learn all the aspects of development as I work on being the best version of a developer that I can be.<br><br>
         To understand more about my skills and experience, click on the links below to get more info. </p>
         <div class="about-icons">
           <div class="icon-card">
             <i class="fas fa-code"></i>
-            <p><a href="about.html">Profile</a></p>
+            <p><a href="about.html" id="profile">Profile</a></p>
           </div>
           <div class="icon-card">
             <i class="fas fa-paint-brush"></i>
-            <p><a href="about.html">Work Experience</a></p>
+            <p><a href="about.html" id="work-experience">Work Experience</a></p>
           </div>
           <div class="icon-card">
             <i class="fas fa-project-diagram"></i>
-            <p><a href="about.html">Skill Set</a></p>
+            <p><a href="about.html" id="skills">Skill Set</a></p>
           </div>
         </div>
       </section>
@@ -66,6 +75,21 @@
             <p>A Agritech application created using Dart with Flutter to connect farmrs and vendors while providing a marketing platform restricted to these parties. The application incorporates Nodejs and Python to bring together different features ideal for success. </p>
             <button><a href="#">View Project</a></button>
           </div>
+          <div class="project-card">
+            <h3>Recipe App</h3>
+            <p>A Dart with Flutter Recipe application for providing details on various food recipes depending on the region of origin. The application categorises differet recipe provides the ingredients and methods of cooking.</p>
+            <button><a href="#">View Project</a></button>
+          </div>
+          <div class="project-card">
+            <h3>Recipe App</h3>
+            <p>A Dart with Flutter Recipe application for providing details on various food recipes depending on the region of origin. The application categorises differet recipe provides the ingredients and methods of cooking.</p>
+            <button><a href="#">View Project</a></button>
+          </div>
+          <div class="project-card">
+            <h3>Recipe App</h3>
+            <p>A Dart with Flutter Recipe application for providing details on various food recipes depending on the region of origin. The application categorises differet recipe provides the ingredients and methods of cooking.</p>
+            <button><a href="#">View Project</a></button>
+          </div>
         </div>
       </section>
     
@@ -81,7 +105,7 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
           
-          <button type="submit">Send</button>
+          <button type="submit"><a href="mailto:magadi220@gmail.com">Send</a></button>
         </form>
       </section>
     

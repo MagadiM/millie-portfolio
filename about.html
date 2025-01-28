@@ -4,78 +4,99 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About Me</title>
+	<link rel="stylesheet" href="styles.css">
 	<style type="text/css">
-		nav {
-			background: mediumpurple;
-			padding: 20px;
-		}
-		nav ul {
-			list-style: none;
-			text-transform: uppercase;
+		.skill-container {
 			display: flex;
-			justify-content: space-around;
+			flex-direction: row;
+			flex-wrap: wrap;
 			align-content: center;
-		}
-		nav ul li a {
-			text-decoration: none;
-			color: white;
-			font-weight: 700;
-			text-transform: uppercase;
+			justify-content: center;
 		}
 
-		nav ul li a:hover {
-			color: #260080;
+		.skill-card {
+			width: 150px;
+			height: auto;
 		}
-		nav
+
+		.skill-card p {
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		.work {
+			background-color:mediumpurple;
+		}
+
+		.work-details {
+			width: 300px;
+			gap: 2rem;
+		}
 	</style>
 </head>
 <body>
 	<header>
 		<nav>
-			<ul>
-				<li><a href="port.html">Home</a></li>
-				<li><a>Profile</a></li>
-				<li><a>Work Experience</a></li>
-				<li><a>Skill Set</a></li>
-			</ul>
-		</nav>
+          <div class="navbar">
+            <!-- <a href="#home" class="logo">Logo</a> -->
+            <button class="menu-toggle" aria-label="Toggle menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work-experience">Work Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </div>
+        </nav>
 	</header>
 	<section class="profile">
-		<h2 style="color: #270080; font-weight: 600; text-align: center; font-size: 2.0em;"> About Millicent</h2>
+		<h2 style="color: #270080; font-weight: 600; text-align: center; font-size: 2.0em; text-transform: uppercase;"> About Millicent</h2>
 		<p style="text-align: center; font-size: 1.2em; line-height: 1.5; padding: 10px; margin: 10px;">
 			The journey to Software Development started with an interest of taking a look under the hood of my laptop. It was revitalizing, to understand what works, and how it works but it brought forth a greater hunger the need to understand programs and software. Today, I strive to learn more about programming, to read more on the changes in the technological world, and to practice harder to be a change agent within my community. <br>
             I am a tech-enthusiast working towards being a Full Stack Developer. I am fascinated by how front-end development works and intrigued even more by the back-end development end of creating software. Learning and re-learning the inner works of development has pushed me beyond limits I thought I couldn't reach. It has helped revolutionize, my world, to a world of 0 and 1s, that I am chasing daily trying to seek a deeper understanding of software. <br>
-            Developemnt is at the core of change, as most developers take a try at solving world issues. As an african, I know that I have the ability to chnage my continent, through creation of software that is tailored for our needs. I am an enthusiastic writer and programmer who seeks to understand the varioius dimensions that exist in the continent and how as a race we can come together for the sake of Africa. <br>
+            Development is at the core of change, as most developers take a try at solving world issues. As an african, I know that I have the ability to chnage my continent, through creation of software that is tailored for our needs. I am an enthusiastic writer and programmer who seeks to understand the varioius dimensions that exist in the continent and how as a race we can come together for the sake of Africa. <br>
 		</p>
 	</section>
-	<section>
-		<h2>Work Experience</h2>
-		<div class="work-container">
+	<section class="work">
+		<h2 style="color: #fff; font-size: 1.5rem; text-transform: uppercase;">Work Experience</h2>
+		<div class="work-container" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
             <div class="work-details">
-                <h3>Power Learn Project</h3>
-                <h4>Certification in Software Engineering</h4>
+                <h3>Freelancer</h3>
+				<h4>Upwork Inc.</h4>
                 <p>
-                    Tackling world class projects thrpugh the power of code. Exploring Software engineering which entails Front-End development i.e. HTML, CSS, and JavaScript and Backend Development i.e. Python and Dart with Flutter.
+                    Working on various projects and presenting them to clients. The projects range from Case Studies to business analysis, Web development to project management and Report Writing for clients across the globe.
                 </p>
             </div>
             <div class="work-details">
-                <h3>Google Career Certificates</h3>
-                <h4>Cybersecurity Certification</h4>
+                <h3>Business Development Associate</h3>
+				<h4>The Balozi Hospital</h4>
                 <p>
-                    Exploring Cybersecurity in its entirety. We are looking at the different security concerns, types of cyber attacks, how to counter cyber attacks, different versions to ensure software is secure, and ethical hacking.
+                    Incharge of coming up with strategic concepts in markting and fostering partnerships between the hospital and external partners. Highlighted the hospitals mandate representing it in meetings and ensuring proper management while leading the marketing team in reaaching out to potential clients within the Nairobi region.
                 </p>
         	</div>
-            <div class="work-details">
-                <h3>Taita Taveta University</h3>
-                <h4>Bachelor of Business Information Technology</h4>
+            
+			<div class="work-details">
+                <h3>Operations Associate</h3>
+				<h4>TsavoWrite Media Group</h4>
                 <p>
-                    Covered a wide array of topcs from economics, Database, Accounting, Taxation, Financial management, Data Structures and Algorithms, and Object-Oriented Programming.
+                    Led the transformation of business ideas from various clients to digital platforms, through the creation of online e-commerce platforms, web development, and enhancing their online presence. Worked with brands like the Vacani Resort, Petrozen Be-Energy, and The Likizo Hotels. 
+                </p>
+            </div>
+			<div class="work-details">
+                <h3>IT Associate</h3>
+				<h4>Tavevo Water and Sewerage Company</h4>
+                <p>
+                    Worked on system and server updates and Website updates through the use of Wordpress at the Organization ensuring smooth provision of services.
                 </p>
             </div>
         </div>
 	</section>
 	<section class="skills">
-		<h2>Skill Set</h2>
+		<h2 style="text-transform: uppercase; color: #270080;">Skill Set</h2>
 		<div class="skill-container">
 			<div class="skill-card">
 				<i></i>
