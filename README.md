@@ -16,4 +16,4 @@ The projects sections provides the names and descriptions of projects that I hav
 The form placed at this section is meant to help viewers reach Millicent through mail and drop messages they would like to send. 
 
 ### Still under Development
-Working on placing a blog section.
+I want to incorporate ReactJs into the site and include a database from which projects and blog articles can be pulled from when clicked.Working on placing a blog section.

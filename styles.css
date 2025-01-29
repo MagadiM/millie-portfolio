@@ -62,16 +62,7 @@ body {
     padding: 2rem;
     text-align: center;
   }
-  
-  #home {
-    background: #f4f4f4;
-    display: grid;
-  }
 
-  /* #home p {
-    font-size: 2.0rem;
-  } */
-  
   #home .intro {
     display: flex;
     flex-wrap: wrap; 
@@ -94,6 +85,25 @@ body {
     border-radius: 50%;
   }
   
+  #home .social-media {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+  
+  #home .social-media a {
+    text-decoration: none;
+  }
+  
+  #home .social-media img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  #home .social-media img:hover {
+    transform: scale(1.2);
+  }
   /*
   .intro img {
     align-items: right;
@@ -122,9 +132,9 @@ body {
     width: 150px;
   }
   
-  .icon-card i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+  .icon-card img {
+    width: 100px;
+    height: auto;
   }
 
   .icon-card p a {
@@ -176,27 +186,58 @@ body {
     flex-direction: column;
     gap: 1rem;
     width: 50%;
+    margin: 0 auto; /* Horizontally center the form */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #f9f9f9;
   }
   
-  form input, form textarea, form button {
+  /* Center the form container vertically and horizontally */
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form input,
+  form textarea,
+  form button {
     width: 100%;
     padding: 0.5rem;
     justify-content: center;
     align-content: center;
+ 
+    
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form textarea {
+    resize: vertical; /* Allow resizing only vertically */
+    min-height: 100px;
   }
   
   form button {
     background: #270080;
     border: none;
     cursor: pointer;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
-
+  
+  form button:hover {
+    background: #3a00b3;
+  }
+  
   form button a {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
     font-weight: 700;
-  }
+  }  
   
   footer {
     background: mediumpurple;
