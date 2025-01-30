@@ -1,6 +1,7 @@
 # The Millicent Magadi Portfolio
 
 The Millicent Magadi Portfolio is a personal portfolio that tells more about Millicent and her skills as a developer. The Portfolio was created through the use of HTML, CSS. and JavaScript. 
+![screenshot-profile](https://github.com/user-attachments/assets/2f9775ad-f5b0-46be-b24c-e277718af0ae)
 
 ## About Section
 The about section provides a small insight to who Millicnet is and provides three lins to the about page. The About Page provides a clear line of sight on who Millicent is, her work experience and skill set. The about Landing section, explains the journey into development, and the motivations behind my choice to work in the development field. 
